@@ -1,0 +1,8 @@
+{{details.name}}---{{details.description}}---{{details.cost}}----{{details.noofproducts}}
+<br><br>
+<form method="POST">
+	{% csrf_token %}
+	<label>Email:</label><br>
+	<input type="text" name="email"><br><br>
+	<input type="submit" name="buyme">
+</form>
